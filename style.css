@@ -1,0 +1,458 @@
+@font-face {
+  font-family: freight;
+  src: url(/Freight_Big_Pro/Freight\ Big\ Pro\ Light.otf);
+}
+@font-face {
+  font-family: freight_light;
+  src: url(/Freight_Big_Pro/Freight\ Big\ Pro\ Light\ Italic.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: freight;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  z-index: 8;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav #Lnav {
+  height: 100%;
+  width: 30%;
+  padding: 2.3vw 3.8vw;
+}
+nav #Rnav {
+  height: 100%;
+  width: 34%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    width: 80%;
+  }
+
+  ul li {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+    svg {
+      cursor: pointer;
+      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+      transform: rotate(45deg);
+    }
+  }
+}
+#Rnav ul li:nth-child(2) {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#Rnav ul li:nth-child(3) {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#loader video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 5;
+}
+
+#loader #yellow1 {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: #f5e41b;
+  z-index: 999;
+}
+#loader #yellow2 {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: #f5e41b;
+  z-index: 6;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #f5e41b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+#page1 h1 {
+  position: absolute;
+  font-size: 7vw;
+  line-height: 0.72em;
+  word-spacing: 0.02em;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  z-index: 7;
+  color: #fff;
+}
+
+#page1 h1 span {
+  font-family: freight_light;
+}
+#page2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  overflow: hidden;
+  flex-direction: column;
+  line-height: 6vw;
+  background-size: cover;
+  background-position: center;
+}
+
+#page2 #data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+
+  z-index: 1;
+}
+#page2 h5 {
+  font-size: 8vw;
+  color: #fff;
+  z-index: 2;
+  cursor: pointer;
+  font-weight: lighter;
+}
+#page2 #data #moving {
+  display: flex;
+  align-items: center;
+  height: 2.5vw;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  background-color: #f5e41b;
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.15s ease-in-out;
+  transform: scaleY(0);
+}
+#page2 #data #move-parts {
+  display: flex;
+  animation: slide 12s infinite linear;
+}
+
+#page2 #data #move-parts .service-title {
+  margin: 0 1vw;
+  font-size: 2vw;
+}
+
+#page2 #moving #blur {
+  height: 2.5vw;
+  width: 18%;
+  white-space: nowrap;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f5e41b;
+  background: linear-gradient(to right, #f5e41b, #f5e41b, #f5e41b);
+  box-shadow: 10px 0px 20px 20px #f5e41b, -10px 0px 20px 20px #f5e41b;
+}
+#page2 #data h5:hover + #moving {
+  transform: scaleY(1);
+}
+
+#page2 #data h5:hover {
+  font-style: italic;
+  color: #000;
+}
+
+#page2 .data2 #moving #blur {
+  width: 28%;
+}
+#page2 .data3 #moving #blur {
+  width: 12%;
+}
+#page2 .data4 #moving #blur {
+  width: 22%;
+}
+#page2 .data5 #moving #blur {
+  width: 10%;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.white {
+  fill: #fff !important;
+}
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+
+  #container {
+    min-height: 100vh;
+    width: 95%;
+    margin: 0vw auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #container #container1 {
+    min-height: 100vh;
+    width: 28vw;
+    margin-left: 0vw;
+
+    #imgInfo {
+      position: relative;
+      overflow: hidden;
+      height: 25vw;
+      width: 100%;
+      margin-bottom: 1.5vw;
+    }
+    #imgInfo .info {
+      background-color: #00000020;
+      height: 25vw;
+      width: 100%;
+      position: absolute;
+      transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+      z-index: 2;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 4rem;
+
+      span {
+        opacity: 0;
+        line-height: 2.7vw;
+      }
+    }
+    #imgInfo .info:hover {
+      background-color: #000000;
+
+      cursor: pointer;
+    }
+    #imgInfo .info:hover span {
+      font-style: italic;
+      opacity: 1;
+    }
+
+    #imgInfo img {
+      height: 25vw;
+      width: 100%;
+      object-fit: cover;
+      background-position: center;
+
+      transition: all 0.5s ease-in-out;
+    }
+    #imgInfo .info:hover + img {
+      transform: scale(1.2);
+    }
+  }
+
+  #container #container2 {
+    min-height: 100vh;
+    width: 34vw;
+    margin-left: 1.5vw;
+    margin-right: 0;
+
+    #imgInfo {
+      position: relative;
+      overflow: hidden;
+      height: 37vw;
+      width: 100%;
+      margin-bottom: 1.5vw;
+    }
+    #imgInfo .info {
+      background-color: #0000003f;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+      z-index: 2;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 4rem;
+
+      span {
+        opacity: 0;
+        line-height: 2.7vw;
+      }
+    }
+    #imgInfo .info:hover {
+      background-color: #000000;
+      cursor: pointer;
+    }
+    #imgInfo .info:hover span {
+      font-style: italic;
+      opacity: 1;
+    }
+
+    #imgInfo img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+
+      transition: all 0.5s ease-in-out;
+    }
+    #imgInfo .info:hover + img {
+      transform: scale(1.2);
+    }
+  }
+
+  #container #container3 {
+    min-height: 100vh;
+    width: 30vw;
+    margin-left: 20px;
+
+    #imgInfo {
+      position: relative;
+      overflow: hidden;
+      height: 23vw;
+      width: 100%;
+      margin-bottom: 1.5vw;
+    }
+    #imgInfo .info {
+      background-color: #0000003f;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 4rem;
+      color: #fff;
+
+      span {
+        opacity: 0;
+        line-height: 2.7vw;
+      }
+    }
+    #imgInfo .info:hover {
+      background-color: #000000;
+      cursor: pointer;
+    }
+    #imgInfo .info:hover span {
+      font-style: italic;
+      opacity: 1;
+    }
+    #imgInfo img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+
+      transition: all 0.5s ease-in-out;
+    }
+    #imgInfo .info:hover + img {
+      transform: scale(1.2);
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #000;
+  color: #fff;
+
+  #top {
+    position: absolute;
+    left: 48%;
+    bottom: 3%;
+    font-family: neue-haas-grotesk-display;
+    font-size: 16px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    i {
+      font-size: 30px;
+      cursor: pointer;
+      font-weight: lighter;
+    }
+  }
+
+  #handels {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+
+    h2 {
+      color: #fff;
+      font-family: neue-haas-grotesk-display;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      line-height: 1.9em;
+
+      transition: color 0.3s;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      width: 40%;
+      justify-content: space-around;
+      font-size: 20px;
+
+      li {
+        color: #fff;
+        font-family: neue-haas-grotesk-display;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        line-height: 1.9em;
+        user-select: none;
+        transition: color 0.3s;
+      }
+    }
+  }
+}

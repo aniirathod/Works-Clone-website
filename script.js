@@ -143,7 +143,7 @@ let nav_BarChanges = () => {
 
     // Change the color of nav bar logo and text when enter in the black page i.e. page2
     for (let i = 0; i < nav_bar.length; i++) {
-      if (e.scroll.y >= 820 && e.scroll.y < 1700) {
+      if (e.scroll.y >= 720 && e.scroll.y < 1600) {
         nav_bar[i].style.color = "white";
         logo.style.fill = "white";
         menuSvg.style.stroke = "white";

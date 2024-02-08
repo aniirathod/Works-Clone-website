@@ -122,7 +122,6 @@ let nav_BarChanges = () => {
   //On Scroll nav bar changes
 
   scroll.on("scroll", (e) => {
-    console.log(e.scroll.y);
     if (e.scroll.y > 100 && e.scroll.y < 220) {
       // when scroll the plus icon rotates
       menuIcon.style.transform = "rotate(90deg)";
@@ -131,7 +130,7 @@ let nav_BarChanges = () => {
 
       nav_bar[1].style.opacity = "0";
       nav_bar[2].style.opacity = "0";
-      nav_bar[0].style.transform = `translateX(300px)`;
+      nav_bar[0].style.transform = `translateX(250px)`;
     }
 
     //Every thing that changes after coming back they all get normal
@@ -167,7 +166,7 @@ let nav_BarChanges = () => {
     } else {
       nav_bar[1].style.opacity = "0";
       nav_bar[2].style.opacity = "0";
-      nav_bar[0].style.transform = `translateX(300px)`;
+      nav_bar[0].style.transform = `translateX(250px)`;
       menuIcon.style.transform = "rotate(90deg)";
     }
   });

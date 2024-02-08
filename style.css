@@ -1,10 +1,10 @@
 @font-face {
   font-family: freight;
-  src: url(/Freight\ Big\ Pro\ Light.woff2);
+  src: url(/Freight\ Big\ Pro\ Light.woff2) format(woff2);
 }
 @font-face {
   font-family: freight_light;
-  src: url(/Freight\ Big\ Pro\ Light\ Italic.woff2);
+  src: url(/Freight\ Big\ Pro\ Light\ Italic.woff2) format(woff2);
 }
 * {
   margin: 0;

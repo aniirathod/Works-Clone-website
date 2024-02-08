@@ -1,10 +1,19 @@
 @font-face {
-  font-family: freight;
-  src: url(/Freight_Big_Pro/Freight\ Big\ Pro\ Light.otf) format(woff2);
+  font-family: "freight";
+  src: url("/fonts/FreightBigPro-Light.woff2") format("woff2"),
+    url("/fonts/FreightBigPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: freight_light;
-  src: url(/Freight_Big_Pro/Freight\ Big\ Pro\ Light\ Italic.otf) format(woff2);
+  font-family: "freight_light";
+  src: url("/fonts/FreightBigPro-LightItalic.woff2") format("woff2"),
+    url("/fonts/FreightBigPro-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
 }
 * {
   margin: 0;

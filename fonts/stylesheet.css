@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-Light.woff2') format('woff2'),
+        url('FreightBigPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url('FreightBigPro-LightItalic.woff2') format('woff2'),
+        url('FreightBigPro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
